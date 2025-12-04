@@ -69,51 +69,103 @@ main {
     margin: auto;
 }
 
-main .container {
+main section .container {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-main .container:nth-child(even) {
+main section div .container:nth-child(even) {
     flex-direction: row-reverse;
     padding: 20px;
 }
 
 
-main div img {
+main section div img {
     width: 15vh;
     flex-shrink: 0;
 }
 
-main div h1,
-main div p {
+main section h2,
+main section p {
     margin: 0;
 }
 
-main .container h1 {
+main section div .container h2 {
    font-family: 'Merriweather', serif;
    padding-bottom: .5vh;
 }
 
-main .container p {
+main section .container p {
     font-size: 1.5vh;
     line-height: 1.4;
     color: #333;
 }
 
-main .container {
+main section div .container {
     border-bottom: 1px solid #1C3E78; /* A very light gray */
     padding-bottom: 20px; /* Add some space below the line */
     margin-bottom: 30px; /* Add space before the next block starts */
 }
 
-main .container:last-child {
+main section div .container:last-child {
     border-bottom: none;
 }
 
-main .dollar img {
+main section .dollar img {
     width: 10vh;
+}
+main section h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    color: #1C3E78;
+    text-align: center;
+    text-shadow: -1px -1px 0 rgba(210, 184, 135, 1), 1px -1px 0 rgba(210, 184, 135, 1), -1px 1px 0 rgba(210, 184, 135, 1), 1px 1px 0 rgba(210, 184, 135, 1);
+}
+
+main #offerings {
+    display: flex;
+    flex-direction: column;
+}
+
+main #offerings .lists-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+}
+
+main #offerings .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    color: white;
+    background-color: #1C3E78;
+    border: rgba(210, 184, 135, 1) solid .3vh;
+    padding: 2vh;
+}
+
+main #offerings .list h2 {
+    font-size: 2vh;
+    margin-bottom: 1vh;
+    text-align: center;
+    border-right: 1px solid #1C3E78;
+
+}
+
+main #offerings .list ul {
+    list-style-type: disc;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+main #offerings .list ul li {
+    color: white;
+}
+
+main #offerings .list ul li::marker {
+    color: rgba(210, 184, 135, 1);
 }
 
 footer {
