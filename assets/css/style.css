@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Source Sans Pro', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -98,7 +101,7 @@ main section div .container h2 {
 
 main section .container p {
     font-size: 1.5vh;
-    line-height: 1.4;
+    /* line-height: 1.4; */
     color: #333;
 }
 
@@ -118,7 +121,7 @@ main section .dollar img {
 main section h1 {
     font-family: 'Merriweather', serif;
     font-size: 3vh;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     color: #1C3E78;
     text-align: center;
     text-shadow: -1px -1px 0 rgba(210, 184, 135, 1), 1px -1px 0 rgba(210, 184, 135, 1), -1px 1px 0 rgba(210, 184, 135, 1), 1px 1px 0 rgba(210, 184, 135, 1);
@@ -164,6 +167,10 @@ main #offerings .list ul li {
     color: white;
 }
 
+main #offerings .list h2 {
+    color: white;
+}
+
 main #offerings .list ul li::marker {
     color: rgba(210, 184, 135, 1);
 }
@@ -176,6 +183,56 @@ footer {
     border-image: linear-gradient(90deg, rgba(210, 184, 135, 1) 0%, rgba(247, 245, 239, 1) 50%, rgba(210, 184, 135, 1) 100%) 1;
     font-size: 1.5vh;
     color: #666;
+}
+
+.bio-image {
+    margin: 0 auto 2vh auto;
+    height: 35vh;
+    width: auto;
+}
+
+section .bio {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+ul{
+    padding-left: 1.5vh;
+    font-size: 1.5vh;
+}
+
+main section .container ul{
+    line-height: 1.4vh;
+    color: #333;
+}
+
+main section .container h2{
+    color: #1C3E78;
+    text-shadow: -.5px -.5px 0 rgba(210, 184, 135, 1), .5px -.5px 0 rgba(210, 184, 135, 1), -.5px .5px 0 rgba(210, 184, 135, 1), .5px .5px 0 rgba(210, 184, 135, 1);
+}
+
+.contact-info {
+    justify-content: center;
+    background-color: #1C3E78;
+    border: rgba(210, 184, 135, 1) solid .3vh;
+    width: 60vh;
+    border-radius: 2vh;
+    margin: 0 auto;
+ }
+.contact-info ul li {
+    color: white;
+}
+
+.contact-info p {
+    margin-top: 1em;
+}
+
+.contact-info ul li::marker {
+    color: rgba(210, 184, 135, 1);
+}
+
+.contact-info ul li a {
+    color: rgba(210, 184, 135, 1);
 }
 
 /* 
