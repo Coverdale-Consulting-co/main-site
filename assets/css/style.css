@@ -18,17 +18,17 @@ body {
 
 header {
     position: relative;
-    background-image: url('../images/stock/hero.jpg');
+    background-image: url('../images/stock/pngtree-jet.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0px;
-    height: 35vh;
+    height: 20vh;
     width: 100%;
-    /* border-bottom: .5vh solid; */
-    /* border-image: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 50%, var(--accent-color) 100%) 1; */
-    /* border-color: var(--primary-color); */
-    /* box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.2); */
+    border-bottom: .25vh solid;
+    border-image: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 50%, var(--accent-color) 100%) 1;
+    border-color: var(--primary-color);
+    box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -55,14 +55,14 @@ h1 {
     margin-bottom: 1vh;
     color: var(--primary-color);
     text-align: center;
-    text-shadow: -1px -1px 0 var(--accent-color), 1px -1px 0 var(--accent-color), -1px 1px 0 var(--accent-color), 1px 1px 0 var(--accent-color);
+    text-shadow: -.75px -.75px 0 var(--accent-color), .75px -.75px 0 var(--accent-color), -.75px .75px 0 var(--accent-color), .75px .75px 0 var(--accent-color);
 }
 
 h2 {
    font-family: 'Merriweather', serif;
    color: var(--primary-color);
-   text-shadow: -.5px -.5px 0 var(--accent-color), .5px -.5px 0 var(--accent-color), -.5px .5px 0 var(--accent-color), .5px .5px 0 var(--accent-color);
-   margin: 0;
+   /* text-shadow: -.5px -.5px 0 var(--accent-color), .5px -.5px 0 var(--accent-color), -.5px .5px 0 var(--accent-color), .5px .5px 0 var(--accent-color);
+   margin: 0; */
    font-size: 1.25em;
 }
 
@@ -158,6 +158,7 @@ ul{
 
 #accomplishments div img {
     width: 13vh;
+    height: 13vh;
     flex-shrink: 0;
 }
 
@@ -182,7 +183,6 @@ ul{
     margin-bottom: 1vh;
     text-align: center;
     color: white;
-    
 }
 
 #offerings .list ul {
