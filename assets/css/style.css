@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #1C3E78;
-    --secondary-color: #D2B887;
-    --accent-color: #F7F5EF;
-    --text-color: #333333;
-    --background-color: #FFFFFF;
+    --primary-color: #1F2A33;
+    --content-area-color: #FFFFFF;
+    --accent-color: #2FA4A9;
+    --text-color: #3A3A3A;
+    --background-color: #E7ECEF;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--background-color);
 }
 
 header {
@@ -24,8 +25,9 @@ header {
     margin: 0px;
     height: 35vh;
     width: 100%;
-    border-bottom: .5vh solid;
-    border-image: linear-gradient(90deg, rgba(210, 184, 135, 1) 0%, rgba(247, 245, 239, 1) 50%, rgba(210, 184, 135, 1) 100%) 1;
+    /* border-bottom: .5vh solid; */
+    /* border-image: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 50%, var(--accent-color) 100%) 1; */
+    /* border-color: var(--primary-color); */
     /* box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.2); */
 }
 
@@ -39,8 +41,45 @@ nav {
 }
 
 main {
-    padding: 2vh 15vw;
-    margin: auto;
+    padding: 2vh 7.5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: var(--content-area-color);
+}
+
+
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3vh;
+    margin-bottom: 1vh;
+    color: var(--primary-color);
+    text-align: center;
+    text-shadow: -1px -1px 0 var(--accent-color), 1px -1px 0 var(--accent-color), -1px 1px 0 var(--accent-color), 1px 1px 0 var(--accent-color);
+}
+
+h2 {
+   font-family: 'Merriweather', serif;
+   color: var(--primary-color);
+   text-shadow: -.5px -.5px 0 var(--accent-color), .5px -.5px 0 var(--accent-color), -.5px .5px 0 var(--accent-color), .5px .5px 0 var(--accent-color);
+   margin: 0;
+   font-size: 1.25em;
+}
+
+p {
+    font-size: 1.5vh;
+    color: var(--text-color);
+}
+
+h2,p {
+    margin: 0;
+}
+
+ul{
+    padding-left: 1.5vh;
+    font-size: 1.5vh;
+    line-height: 1.4vh;
+    color: var(--text-color);
 }
 
 .container {
@@ -61,6 +100,13 @@ main {
     align-items: flex-end;
 }
 
+.bio-image {
+    width: 100%;
+    max-width: 25vh;
+    height: auto;
+    flex-shrink: 1;
+}
+
 .stack-left{
     flex-direction: column;
     align-items: flex-start;
@@ -70,52 +116,16 @@ main {
     gap: 0px;
 }
 
-h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 3vh;
-    margin-bottom: 1vh;
-    color: #1C3E78;
-    text-align: center;
-    text-shadow: -1px -1px 0 rgba(210, 184, 135, 1), 1px -1px 0 rgba(210, 184, 135, 1), -1px 1px 0 rgba(210, 184, 135, 1), 1px 1px 0 rgba(210, 184, 135, 1);
-}
-
-h2 {
-   font-family: 'Merriweather', serif;
-   color: #1C3E78;
-   text-shadow: -.5px -.5px 0 rgba(210, 184, 135, 1), .5px -.5px 0 rgba(210, 184, 135, 1), -.5px .5px 0 rgba(210, 184, 135, 1), .5px .5px 0 rgba(210, 184, 135, 1);
-   margin: 0;
-   font-size: 1.25em;
-}
-
-p {
-    font-size: 1.5vh;
-    color: #333;
-}
-
-h2,p {
-    margin: 0;
-}
-
-ul{
-    padding-left: 1.5vh;
-    font-size: 1.5vh;
-    line-height: 1.4vh;
-    color: #333;
-}
-
-
-
 #bio img{
     margin: 0 auto 2vh auto;
-    height: 35vh;
-    width: auto;
+    flex: 1 1 50%
 }
 
 #bio .contact-info {
     justify-content: center;
-    background-color: #1C3E78;
-    border: rgba(210, 184, 135, 1) solid .3vh;
-    width: 60vh;
+    background-color: var(--primary-color);
+    border: var(--accent-color) solid .3vh;
+    width: 35vw;
     border-radius: 2vh;
     margin: 0 auto;
  }
@@ -129,15 +139,15 @@ ul{
 }
 
 #bio .contact-info ul li::marker {
-    color: rgba(210, 184, 135, 1);
+    color: var(--accent-color);
 }
 
-#bio.contact-info ul li a {
-    color: rgba(210, 184, 135, 1);
+#bio .contact-info ul li a {
+    color: var(--accent-color);
 }
 
 #accomplishments .container {
-    border-bottom: 1px solid #1C3E78; 
+    border-bottom: 1px solid var(--primary-color); 
     padding-bottom: 20px; 
     margin-bottom: 30px; 
 }
@@ -161,9 +171,9 @@ ul{
     flex-direction: column;
     align-items: center;
     flex: 1;
-    color: white;
-    background-color: #1C3E78;
-    border: rgba(210, 184, 135, 1) solid .3vh;
+    color: var(--content-area-color);
+    background-color: var(--primary-color);
+    border: var(--accent-color) solid .3vh;
     padding: 2vh;
 }
 
@@ -182,20 +192,20 @@ ul{
 }
 
 #offerings .list ul li {
-    color: white;
+    color: var(--content-area-color);
 }
 
 .contact-info ul li::marker,
 #offerings .list ul li::marker {
-    color: rgba(210, 184, 135, 1);
+    color: var(--accent-color);
 }
 
 footer {
     text-align: center;
     padding: 1vh 0;
-    background-color:#1C3E78;
+    background-color: var(--primary-color);
     border-top: .3vh solid;
-    border-image: linear-gradient(90deg, rgba(210, 184, 135, 1) 0%, rgba(247, 245, 239, 1) 50%, rgba(210, 184, 135, 1) 100%) 1;
+    border-image: linear-gradient(90deg, var(--accent-color) 0%, rgba(247, 245, 239, 1) 50%, var(--accent-color) 100%) 1;
     font-size: 1.5vh;
-    color: #666;
+    color: var(--text-color);
 }
