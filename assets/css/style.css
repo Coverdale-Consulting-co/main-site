@@ -31,7 +31,7 @@ header {
     box-shadow: inset 0 0 70px rgba(0, 0, 0, 0.2);
 }
 
-nav {
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,13 +41,63 @@ nav {
 }
 
 main {
-    padding: 2vh 7.5vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    background-color: var(--content-area-color);
+    display: flex;
+    flex: 1;
 }
 
+main > nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 16vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 2vh 0;
+    overflow-y: auto;
+    align-self: flex-start;
+}
 
+main > nav ul {
+    position: sticky;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* max-height: calc(100vh - 4vh);
+    top: 2vh; */
+}
+
+main > nav ul li {
+    margin: 0;
+}
+
+main > nav ul li a {
+    display: block;
+    padding: 1.5vh 2vw;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6vh;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+main > nav ul li a:hover {
+    background-color: rgba(47, 164, 169, 0.2);
+    border-left-color: var(--accent-color);
+    padding-left: 2.5vw;
+}
+
+main > nav ul li a.active {
+    background-color: rgba(47, 164, 169, 0.3);
+    border-left-color: var(--accent-color);
+    font-weight: bold;
+}
+
+main > section {
+    margin-left: 15vw;
+    padding: 2vh 7.5vw;
+    width: 100%;
+    background-color: var(--content-area-color);
+}
 
 h1 {
     font-family: 'Merriweather', serif;
@@ -61,8 +111,6 @@ h1 {
 h2 {
    font-family: 'Merriweather', serif;
    color: var(--primary-color);
-   /* text-shadow: -.5px -.5px 0 var(--accent-color), .5px -.5px 0 var(--accent-color), -.5px .5px 0 var(--accent-color), .5px .5px 0 var(--accent-color);
-   margin: 0; */
    font-size: 1.25em;
 }
 
@@ -102,8 +150,9 @@ ul{
 
 .bio-image {
     width: 100%;
-    max-width: 25vh;
+    max-width: 40vh;
     height: auto;
+    padding: auto;
     flex-shrink: 1;
 }
 
@@ -116,13 +165,20 @@ ul{
     gap: 0px;
 }
 
+#content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 2.5vw;
+}
+
 #bio img{
     margin: 0 auto 2vh auto;
-    flex: 1 1 50%
+    flex: 50%
 }
 
 #bio .contact-info {
-    justify-content: center;
+    justify-content: flex-start;
     background-color: var(--primary-color);
     border: var(--accent-color) solid .3vh;
     width: 35vw;
@@ -205,7 +261,7 @@ footer {
     padding: 1vh 0;
     background-color: var(--primary-color);
     border-top: .3vh solid;
-    border-image: linear-gradient(90deg, var(--accent-color) 0%, rgba(247, 245, 239, 1) 50%, var(--accent-color) 100%) 1;
+    border-image: linear-gradient(90deg, var(--primary-color) 0%, var(--primary-color) 25%, var(--accent-color) 100%) 1;
     font-size: 1.5vh;
     color: var(--text-color);
 }
