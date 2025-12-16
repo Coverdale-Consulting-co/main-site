@@ -135,7 +135,7 @@ h1 {
 h2 {
    font-family: 'Merriweather', serif;
    color: var(--primary-color);
-   font-size: 1.25em;
+   font-size: 1.5vh;
 }
 
 p {
@@ -217,7 +217,8 @@ ul{
 }
 
 #bio .contact-info p {
-    margin-top: 1em;
+    padding: 1em;
+    
 }
 
 #bio .contact-info ul li::marker {
@@ -291,3 +292,106 @@ footer {
     font-size: 1.5vh;
     color: var(--text-color);
 }
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 2vh;
+    left: 2vw;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+@media (max-width: 1133px) {
+    main > nav {
+        width: 80vw;
+    }
+    #bio > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #bio .bio-image {
+        margin: 0 auto;
+    }
+
+    #bio .contact-info {
+        width: 50vw;
+    }
+
+    #bio .contact-info p {
+        padding: 1vh;
+    }
+
+    #accomplishments div img {
+        width: 10vh;
+        height: 10vh;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    main > nav {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 70vw;
+        max-width: 300px;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+        box-shadow: .5vh 0 5vh rgba(0, 0, 0, 0.3);
+    }
+    main > nav ul {
+        margin-top: 5vh;
+    }
+
+    main > nav.active {
+        left: 0;
+    }
+
+    main > section {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    
+}
+

@@ -8,15 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/menu.js" defer></script>
 </head>
 <body>
-    <header>
-        <!-- <nav>
-            
-        </nav> -->
-    </header>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <header></header>
     <main>
-            <nav>
+            <nav id="nav-menu">
                 <ul>
                     <li><a href="#bio"><i class="fa fa-bio"></i>Bio</a></li>
                     <li><a href="#accomplishments"><i class="fa fa-accomplishments"></i>Accomplishments</a></li>
@@ -40,7 +42,10 @@
                 </div>
                 <div class="container" style="text-align: justify;">
                     <div>
-                        <p>During Paul's 16+ years in the industry, his focus has been on driving high value decision making through strategic analysis and concise project management. Starting his career as an Analyst, eventually rising to lead the team of a highly regarded travel consulting firm (HRG). In his role as Director of Partner Analytics at Internova Travel Group, Paul worked to develop strategies for commercial supplier/partner agreements across the network of companies. Currently, as Senior Director of Airline Relations for Concertiv Inc., the goal is to ensure that our clients and travel partners have mutually beneficial programs in place to maximize savings and revenue opportunities. Cherishing the opportunity to work with many of the newest stars in the industry Paul was part of the leadership committees for GBTA Ladders and is President of the Black Men’s Travel Network, comprised of 100+ gentlemen across practically all categories of travel.</p>
+                        <p style="margin-bottom: 1vh;">My mission is to drive high-value decision making through strategic analysis and concise project management.</p>
+                        <p style="margin-bottom: 1vh;">After a few years in NYC Real Estate Development and Finance, I was fortunate enough to stumble upon the travel industry and have never looked back!</p>
+                        <p style="margin-bottom: 1vh;">Starting my travel industry career as an Analyst for HRG North America, eventually rising to 2nd in command of the Consulting division; then, as Director of Partner Analytics at Internova Travel Group, I worked to develop the strategies for commercial supplier partnerships across the network of agencies. Most recently, as Senior Director of Airline Relations for Concertiv Inc., more work has ensured that our travelers and industry partners have mutually beneficial programs in place to maximize savings and revenue opportunities. </p>
+                        <p>Cherishing opportunities to work with many up-and-coming stars in the industry, Paul has previously held a seat on the Leadership Committee for GBTA Ladders and currently serves as President of the Black Men’s Travel Network, a group consisting of 100+ gentlemen across every category of business and leisure travel.</p>
                     </div>
                 </div>
                 <div class = "container stack-left list">               
@@ -53,9 +58,10 @@
                 <div class = "container stack-left list">
                     <h2>SUMMARY OF QUALIFICATIONS</h2>
                     <ul>
-                        <li>Areas of specialization include preparing, presenting, and defending complex financial models involving proposal analysis, cash flows and budgeting as well as providing the project management to implement executive, procurement and HR advancements.</li>
-                        <li>Use of Agile Principals applied in development of a “speed to market” for new reporting and dashboards judged best in class.</li>
-                        <li>Skilled in travel industry back-office systems: Agresso, Grasp, Dolphin, ARC, Crossfire, Prime Analytics and Travcom.</li>
+                        <li>Areas of specialization include preparing, presenting, and defending complex financial models involving proposal analysis, scenario building, cash flows and budgeting as well as providing the project management and change management expertise </li>
+                        <li>Application of Agile Principles to enhance the “speed to market” for new products, analytics and dashboards</li>
+                        <li>Advanced proficiencies in Microsoft Office Suite, Advanced Excel, Tableau, PowerBl, Alteryx, PowerPoint, TM1 and Salesforce</li>
+                        <li>Skilled in travel industry back and mid office systems: Agresso, Cvent (Lanyon), Grasp, Dolphin, ARC, Crossfire, Prime Analytics, Travcom, Concur, Online Booking (OBT), Virtual Payments Systems & Expense Management Tools.   </li>
                     </ul>   
                 </div>
             </section>
@@ -65,21 +71,29 @@
                     <img src="./assets/images/stock/business-handshake-partnership.jpg" alt="Dollar Image" style="width: 12.5vw;">
                     <div>
                         <h2>Results-Focused</h2>
-                        <p>Completed over $2 billion in travel sourcing projects (RFPs) for many high-profile clients such as Ernst & Young, Bombardier, Bank of Montreal (BMO), Deutsche Bank, Procter and Gamble (P&G), Novartis, Syngenta, Wells Fargo and many others.</p>
+                        <ul>
+                            <li>Successfully negotiated net positive terms on bespoke air deal renewals for corporate clients in 2025</li>
+                            <li>Added two new partner airlines for inclusion in the “Concertiv Inc. Group Air Deal” in 2025</li>
+                            <li>Airline NDC Negotiations, Contracting and Implementations across various travel agencies (TMCs) and clients</li>
+                            <li>Completed billions in global travel sourcing projects for many high-profile clients in Financial Services, Banking, Transportation & Aerospace, Pharmaceutical, Consumer Products and more</li>
+                        </ul>
                     </div>
                 </div>
                 <div class ="container" style="flex-direction: row-reverse;">
                     <img src="./assets/images/stock/airplane-over-office.webp" alt="Dollar Image" style="width: 12.5vw;">
                     <div>
                         <h2>Global Reach</h2>
-                        <p>Global Travel Program Implementation and Management across multiple regional travel agency partners for programs of $100,000,000+ across all categories (Air, Hotel, Corporate Housing, Car, Insurance, etc.)</p>
+                        <p style="margin: 1em 0;">Whether expanding into a new region or consolidating your global travel program, we can help with your implementation and management across all regions of the globe for any/all categories (Agency, Air, Hotel, Car/Fleet, Insurance, Cruise, etc.)</p>
                     </div>
                 </div>
                 <div class ="container">
                     <img src="./assets/images/stock/stock-photo-financial-graph-night-city-scape.jpg" alt="Dollar Image" style="width: 12.5vw;">
                     <div>
                         <h2>Scalable Processes</h2>
-                        <p>Created scalable processes and analytics to support corporate expansion plans, M&A initiatives and monitoring of metrics for success (KPIs).</p>
+                        <ul>
+                            <li>Keys to supporting corporate expansion plans, M&A initiatives and the understanding of which metrics of success (KPIs) make sense</li>
+                            <li>Previous accomplishments include the procurement and implementation of analytics software that has resulted in 10X Return on Investment (ROI)</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -87,29 +101,33 @@
                 <h1>Consultative Offerings</h1>
                 <div class="lists-wrapper">
                     <div class="container list">
-                        <h2>Corporate/Business Travel</h2>
+                        <h2>Business Travel</h2>
                         <ul>
-                            <li>TMC RFIs & RFPs</li>
-                            <li>Airline RFPs</li>
-                            <li>Hotel RFPs</li>
-                            <li>Car Rental RFPs</li>
-                            <li>Global Travel Program Implementation & Management</li>
+                            <li>Outsourced Program Management (all categories)</li>
+                            <li>TMC RFPs & Implementation Management</li>
+                            <li>Airline RFPs & Fare Filing Management</li>
+                            <li>Hotel RFPs & Rate Loading/Auditing</li>
+                            <li>Rental Car & Fleet RFPs</li>
+                            <li>Corporate Card & Virtual Payment Systems</li>
+                            <li>Online Booking Tool (OBT)  Configuration Management</li>
                         </ul>
                     </div>
                     <div class="container list">
                         <h2>Agency/TMC Advisory Services</h2>
                         <ul>
-                            <li>Revenue & Yield Optimization across all categories (Revenue Management)</li>
-                            <li>Financial Reporting (Corporate Finance Office focus for travel companies)</li>
+                            <li>Revenue Management & Yield Optimization for all categories in Business and Leisure</li>
+                            <li>Internal financial reporting practices + analytics (profitability modeling) for wholly owned, and host agencies, or Independent Contractors (IC’s)</li>
                             <li>Mergers & Acquisitions</li>
                         </ul>
                     </div>
                     <div class="container list">
-                        <h2>Agency/TMC Advisory Services</h2>
+                        <h2>Other Advisory Services</h2>
                         <ul>
+                            <li>Procurement (Direct & Indirect)</li>
                             <li>Mergers & Acquisitions (Non-Agency)</li>
                             <li>Real Estate Development</li>
-                            <li>Strategic Financial Analysis & Management</li>
+                            <li>Financial Analysis</li>
+                            <li>Non-Travel Project Management</li>
                         </ul>
                     </div>
                 </div>               
