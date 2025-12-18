@@ -340,6 +340,10 @@ footer {
 }
 
 @media (max-width: 1024px) {
+    main{
+        width: 100%
+    }
+    
     main > nav {
         width: 20vw;
     }
@@ -438,15 +442,15 @@ footer {
 
 @media (max-width: 425px) {
     main, p, ul {
-        font-size: 1.25vh;
+        font-size: 1.5vh;
     }
 
     h2{
-        font-size: 1.7vh;
+        font-size: 2vh;
     }
 
     h1{
-        font-size: 2.7vh;
+        font-size: 3.2vh;
     }
 
     #bio .bio-image {
