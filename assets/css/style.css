@@ -240,8 +240,8 @@ ul{
 }
 
 #accomplishments div img {
-    width: 13vh;
-    height: 13vh;
+    width: 200px;
+    height: 150px;
     flex-shrink: 0;
     margin-right: 1vh;
 }
@@ -253,6 +253,7 @@ ul{
 
 #offerings .lists-wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 2vh;
 }
 
@@ -301,7 +302,6 @@ footer {
     color: var(--text-color);
 }
 
-/* Hamburger Menu Styles */
 .hamburger {
     display: none;
     position: fixed;
@@ -339,10 +339,15 @@ footer {
     transform: rotate(-45deg) translate(8px, -8px);
 }
 
-@media (max-width: 1133px) {
+@media (max-width: 1024px) {
     main > nav {
-        width: 80vw;
+        width: 20vw;
     }
+
+    #bio .bio-image {
+        max-width: 55vw;
+    }
+
     #bio > .container {
         flex-direction: column;
         align-items: center;
@@ -360,14 +365,40 @@ footer {
         padding: 1vh;
     }
 
-    #accomplishments div img {
-        width: 10vh;
-        height: 10vh;
+    .lists-wrapper {
+        flex-direction: column;
+        align-items: center;
     }
+
+    #offerings .list {
+        width: 50vw;
+    }
+
+    
+    
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
+    main > nav {
+        width: 100vw;
+        max-width: none;
+    }
+
+    #bio .bio-image {
+        max-width: 70vw;
+    }
+
+    header {
+        height: 17.5vh;
+        width: 100vw;
+    }
+
+    #offerings .list {
+        width: 80vw;
+    }
+
+
+
     .hamburger {
         display: flex;
     }
@@ -399,7 +430,39 @@ footer {
     #content {
         width: 100%;
     }
-
     
+    #bio .contact-info {
+        width: 70vw;
+    }
 }
 
+@media (max-width: 425px) {
+    main, p, ul {
+        font-size: 1.25vh;
+    }
+
+    h2{
+        font-size: 1.7vh;
+    }
+
+    h1{
+        font-size: 2.7vh;
+    }
+
+    #bio .bio-image {
+        max-width: 80vw;
+    }
+
+    #accomplishments .container div img {
+        width: 10vw;
+        height: 6vw;
+    }
+    
+    #offerings .list {
+        width: 90vw;
+    }
+
+    #bio .contact-info {
+        width: 90vw;
+    }
+}
